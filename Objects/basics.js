@@ -6,8 +6,6 @@ An object can be created with figure brackets {…} with an optional list of pro
 We can imagine an object as a cabinet with signed files. Every piece of data is stored in its file by the key. It’s easy to find a file by its name or add/remove a file.
 */
 
-const { multiply } = require("lodash");
-
 // An Empty Object ("Empty cabinet") can be created using one of the two syntax:
 
 // let user1 = new Object();
