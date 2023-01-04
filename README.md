@@ -25,3 +25,8 @@
    - [Optional chaining '?.'](/2_objectsBasics/5_optionalChaining.js)
    - [Symbol type](/2_objectsBasics/6_symbolType.js)
    - [Object to primitive conversion](/2_objectsBasics/7_objectToPrimitiveConversion.js)
+
+## References
+
+- [The Modern JavaScript Tutorial](https://javascript.info/)
+- [Learn JavaScript](https://learnjavascript.online/)
