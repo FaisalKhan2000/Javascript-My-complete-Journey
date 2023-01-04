@@ -26,7 +26,7 @@
    - [Symbol type](/2_objectsBasics/6_symbolType.js)
    - [Object to primitive conversion](/2_objectsBasics/7_objectToPrimitiveConversion.js)
 
-2. [Data Types](/3_dataTypes/)
+3. [Data Types](/3_dataTypes/)
    - [Methods of primitives](/3_dataTypes/1_methodsOfPrimitives.js)
    - [Numbers](/3_dataTypes/2_numbers.js)
    - [Strings](/3_dataTypes/3_strings.js)
