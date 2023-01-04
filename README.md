@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-1. [Javascript fundamentals](#example)
+1. [Javascript fundamentals](/1_javascriptFundamentals/)
 
    - [variables](/1_javascriptFundamentals/1_variables.js)
    - [data types](/1_javascriptFundamentals/2_dataTypes.js)
@@ -17,7 +17,7 @@
    - [functions](/1_javascriptFundamentals/11_functions.js)
    - [arrow functions](/1_javascriptFundamentals/12_arrowFunctions.js)
 
-2. [Object Basics](#example2)
+2. [Object Basics](/2_objectsBasics/)
    - [Objects](/2_objectsBasics/1_objectBasics.js)
    - [Object references and copying](/2_objectsBasics/2_objectReferncesAndCopying.js)
    - [Object methods, "this"](/2_objectsBasics/3_objectMethodsAndThis.js)
@@ -26,7 +26,23 @@
    - [Symbol type](/2_objectsBasics/6_symbolType.js)
    - [Object to primitive conversion](/2_objectsBasics/7_objectToPrimitiveConversion.js)
 
+2. [Data Types](/3_dataTypes/)
+   - [Methods of primitives](/3_dataTypes/1_methodsOfPrimitives.js)
+   - [Numbers](/3_dataTypes/2_numbers.js)
+   - [Strings](/3_dataTypes/3_strings.js)
+   - [Arrays](/3_dataTypes/4_arrays.js)ss
+   - [Array methods](/3_dataTypes/5_arrayMethods.js)
+   - [Iterables](/3_dataTypes/6_iterables.js)
+   - [Map and Set](/3_dataTypes/7_mapAndSet.js)
+   - [WeakMap and WeakSet](/3_dataTypes/8_weakMapAndWeakSet.js)
+   - [Object.keys, values, entries](/3_dataTypes/9_objectKeysValuesEntries.js)
+   - [Destructuring assignment](/3_dataTypes/10_destructuringAssignment.js)
+   - [Date and time](/3_dataTypes/11_dataAndTime.js)
+   - [JSON methods, toJSON](/3_dataTypes/12_jsonMethods.js)
+
 ## References
 
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Learn JavaScript](https://learnjavascript.online/)
+
+
