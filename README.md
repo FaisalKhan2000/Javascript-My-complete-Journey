@@ -30,7 +30,7 @@
    - [Methods of primitives](/3_dataTypes/1_methodsOfPrimitives.js)
    - [Numbers](/3_dataTypes/2_numbers.js)
    - [Strings](/3_dataTypes/3_strings.js)
-   - [Arrays](/3_dataTypes/4_arrays.js)ss
+   - [Arrays](/3_dataTypes/4_arrays.js)
    - [Array methods](/3_dataTypes/5_arrayMethods.js)
    - [Iterables](/3_dataTypes/6_iterables.js)
    - [Map and Set](/3_dataTypes/7_mapAndSet.js)
