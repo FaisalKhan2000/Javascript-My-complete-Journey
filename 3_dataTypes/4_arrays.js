@@ -124,6 +124,22 @@ arrz.push("Pear"); // modify the array by reference
 
 console.log(fruits1); // Banana, Pear - 2 items now
 
+// let user = [];
+// user[99999] = 5;
+// user.age = 25;
+
+// console.log(user);
+// console.log(user[99999]);
+
+let ar = [];
+
+ar[0] = "hello";
+ar[1000] = "hi";
+ar[999] = "hi";
+console.log(ar);
+
+// [ 'hello', <998 empty items>, 'hi', 'hi', test: 5 ]
+
 //* Performance
 
 // Methods push/pop run fast, while shift/unshift are slow.
@@ -194,8 +210,120 @@ for (const key in fruits) {
 // Pear
 
 //* A word about “length”
+
+// The length property automatically updates when we modify the array. To be precise, it is actually not the count of values in the array, but the greatest numeric index plus one.
+
+// For instance, a single element with a large index gives a big length:
+
+let fruits2 = [];
+fruits2[123] = "Apple";
+
+console.log(fruits2.length); //124
+
+let fruits3 = [];
+fruits3[0] = 1;
+fruits3[1] = 1;
+fruits3[2] = 1;
+fruits3[3] = 1;
+fruits3[4] = 1;
 // .
 // .
 // .
 // .
-// .
+fruits3[1000] = 1;
+
+console.log(fruits3);
+
+// The length property automatically updates when we modify the array. To be precise, it is actually not the count of values in the array, but the greatest numeric index plus one.
+
+console.log(fruits3.length); //1001
+
+// Note that we usually don’t use arrays like that.
+
+// Another interesting thing about the length property is that it’s writable.
+
+// If we increase it manually, nothing interesting happens. But if we decrease it, the array is truncated. The process is irreversible, here’s the example:
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.length = 2; // truncate to 2 elements
+// alert( arr ); // [1, 2]
+
+// arr.length = 5; // return length back
+// alert( arr[3] ); // undefined: the values do not return
+
+// So, the simplest way to clear the array is: arr.length = 0;.
+
+//* new Array();
+
+// There is one more syntax to create an array:
+
+// let arr3 = new Array("Apple", "Mango", "etc");
+// console.log(arr3); [ 'Apple', 'Mango', 'etc' ]
+
+let arr3 = new Array(2); // will it create an array of [2] ?
+console.log(arr3[0]); // undefined! no elements.
+console.log(arr3.length); // length 2
+
+console.log(arr3); // [ <2 empty items> ]
+// To avoid such surprises, we usually use square brackets, unless we really know what we’re doing.
+
+//* Multidimensional arrays
+
+// Arrays can have items that are also arrays. We can use it for multidimensional arrays, for example to store matrices:
+
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+console.log(matrix[0][2]);
+
+//* toString
+
+// Arrays have their own implementation of toString method that returns a comma-separated list of elements.
+
+// let arr = [1, 2, 3];
+
+// alert( arr ); // 1,2,3
+// alert( String(arr) === '1,2,3' ); // true
+
+// // Also, let’s try this:
+
+// alert( [] + 1 ); // "1"
+// alert( [1] + 1 ); // "11"
+// alert( [1,2] + 1 ); // "1,21"
+
+// Arrays do not have Symbol.toPrimitive, neither a viable valueOf, they implement only toString conversion, so here [] becomes an empty string, [1] becomes "1" and [1,2] becomes "1,2".
+
+// When the binary plus "+" operator adds something to a string, it converts it to a string as well, so the next step looks like this:
+
+// alert( "" + 1 ); // "1"
+// alert( "1" + 1 ); // "11"
+// alert( "1,2" + 1 ); // "1,21"
+
+//*    Don’t compare arrays with ==
+
+// It is generally not recommended to use the equality operator (==) to compare arrays in JavaScript. This is because the operator compares the references of the arrays, rather than their contents.
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+// console.log(arr1 == arr2);  // Output: false
+
+// In the example above, arr1 and arr2 have the same contents, but they are stored at different memory locations, so the equality operator returns false.
+
+// To compare the contents of two arrays, you can use the .every() method, which returns true if every element in the array passes the provided test function. For example:
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+// let areEqual = arr1.every((val, index) => val === arr2[index]);
+// console.log(areEqual);  // Output: true
+
+// Alternatively, you can use the JSON.stringify() function to convert the arrays to strings and then compare the strings.
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+// console.log(JSON.stringify(arr1) === JSON.stringify(arr2));  // Output: true
+
+// It's important to note that this method may not work for arrays that contain objects or other non-primitive values. In these cases, you will need to use a more specialized method for comparing the contents of the arrays.
