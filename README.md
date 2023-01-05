@@ -18,6 +18,7 @@
    - [arrow functions](/1_javascriptFundamentals/12_arrowFunctions.js)
 
 2. [Object Basics](/2_objectsBasics/)
+
    - [Objects](/2_objectsBasics/1_objectBasics.js)
    - [Object references and copying](/2_objectsBasics/2_objectReferncesAndCopying.js)
    - [Object methods, "this"](/2_objectsBasics/3_objectMethodsAndThis.js)
@@ -27,6 +28,7 @@
    - [Object to primitive conversion](/2_objectsBasics/7_objectToPrimitiveConversion.js)
 
 3. [Data Types](/3_dataTypes/)
+
    - [Methods of primitives](/3_dataTypes/1_methodsOfPrimitives.js)
    - [Numbers](/3_dataTypes/2_numbers.js)
    - [Strings](/3_dataTypes/3_strings.js)
@@ -44,5 +46,3 @@
 
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Learn JavaScript](https://learnjavascript.online/)
-
-
