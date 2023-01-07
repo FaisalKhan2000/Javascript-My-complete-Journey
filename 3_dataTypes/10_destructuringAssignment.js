@@ -139,7 +139,7 @@ let [name5 = "Guest", surname = "Anonymous"] = ["Julius"];
 console.log(name5); // Julius (from array)
 console.log(surname); // Anonymous (default used)
 
-// -------------------------------------------------
+// ------------------------------------------------------------------------------------------
 
 //* Object destructuring
 
