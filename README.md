@@ -42,6 +42,11 @@
    - [Date and time](/3_dataTypes/11_dataAndTime.js)
    - [JSON methods, toJSON](/3_dataTypes/12_jsonMethods.js)
 
+4. [Object properties configuration](/4_objectPropertiesConfiguration/)
+
+   - [Property flags and descriptors](/4_objectPropertiesConfiguration/1_propertyFlagsDescriptors.js)
+   - [Property getters and setters](/4_objectPropertiesConfiguration/2_propertyGettersSetters.js)
+
 ## References
 
 - [The Modern JavaScript Tutorial](https://javascript.info/)
