@@ -121,7 +121,7 @@ Rabbit2.prototype.jumps = true;
 
 Rabbit2.prototype = {
   jumps: true,
-  constructor: Rabbit,
+  constructor: Rabbit2,
 };
 
 // now constructor is also correct, because we added it
