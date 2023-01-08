@@ -138,3 +138,56 @@ user2.name = " "; // Name is too short...
 console.log(user2.name);
 
 console.log(user2);
+
+//* Using for compatibility
+
+// One of the great uses of accessors is that they allow to take control over a “regular” data property at any moment by replacing it with a getter and a setter and tweak its behavior.
+
+// Imagine we started implementing user objects using data properties name and age:
+
+// function User(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// let john = new User("John", 25);
+
+// console.log(john);
+// console.log(john.age);
+
+// …But sooner or later, things may change. Instead of age we may decide to store birthday, because it’s more precise and convenient:
+
+// function User(name, birthday) {
+//   this.name = name;
+//   this.birthday = birthday;
+// }
+
+// let user3 = new User("faisal", new Date(2000, 0, 11));
+
+// console.log(user3);
+
+// Now what to do with the old code that still uses age property?
+
+// We can try to find all such places and fix them, but that takes time and can be hard to do if that code is used by many other people. And besides, age is a nice thing to have in user, right?
+
+// Let’s keep it.
+
+// Adding a getter for age solves the problem:
+
+function User(name, birthday) {
+  this.name = name;
+  this.birthday = birthday;
+  Object.defineProperty(this, "age", {
+    get() {
+      let todayYear = new Date().getFullYear();
+      return todayYear - this.birthday.getFullYear();
+    },
+  });
+}
+
+let user3 = new User("faisal", new Date(2000, 0, 11));
+
+console.log(user3);
+console.log(user3.name);
+console.log(user3.age);
+console.log(user3.birthday);
