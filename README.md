@@ -47,6 +47,13 @@
    - [Property flags and descriptors](/4_objectPropertiesConfiguration/1_propertyFlagsDescriptors.js)
    - [Property getters and setters](/4_objectPropertiesConfiguration/2_propertyGettersSetters.js)
 
+4. [Prototypes, inheritance](/5_prototypesInheritance)
+
+   - [Prototypal inheritance](/5_prototypesInheritance/1_prototypalInheritance.js)
+   - [F.prototype](/5_prototypesInheritance/2_F.prototype.js)
+   - [Native prototypes](/5_prototypesInheritance/3_nativePrototype.js)
+   - [Prototype methods, objects without __proto__](/5_prototypesInheritance/4_prototypeMethodsObjectwithout__proto__.js)
+
 ## References
 
 - [The Modern JavaScript Tutorial](https://javascript.info/)
